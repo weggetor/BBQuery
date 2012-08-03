@@ -1,0 +1,7 @@
+﻿<h1>Releasenotes</h1>
+<p>bitboxx bbquery  01.00.00 will work for any DNN version <strong>6.1.0</strong> and up.
+<p>
+	V 01.00.00 Initial Release.
+</p>
+
+	
