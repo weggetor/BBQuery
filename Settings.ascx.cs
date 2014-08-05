@@ -35,7 +35,9 @@ namespace Bitboxx.DNNModules.BBQuery
 	/// The Settings class manages Module Settings
 	/// </summary>
 	/// -----------------------------------------------------------------------------
-	[DNNtc.ModuleControlProperties("Settings", "Bitboxx BBQuery Settings", DNNtc.ControlType.Edit, "", true, true)]
+    [DNNtc.PackageProperties("Bitboxx.BBQuery")]
+    [DNNtc.ModuleProperties("Bitboxx.BBQuery")]
+    [DNNtc.ModuleControlProperties("Settings", "Bitboxx BBQuery Settings", DNNtc.ControlType.Edit, "", true, true)]
 	public partial class Settings : ModuleSettingsBase
 	{
 

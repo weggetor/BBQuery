@@ -18,7 +18,7 @@ IF NOT EXISTS (SELECT * FROM dbo.sysobjects WHERE id = object_id(N'{databaseOwne
          ShowInSearch BIT NOT NULL DEFAULT 0 
       )
 
-      ALTER TABLE {databaseOwner}[{objectQualifier}BBQuery_Parameters] ADD CONSTRAINT PK_BBQuery_Parameters PRIMARY KEY CLUSTERED  (ParameterID ASC)
+      ALTER TABLE {databaseOwner}[{objectQualifier}BBQuery_Parameters] ADD CONSTRAINT PK_{objectQualifier}BBQuery_Parameters PRIMARY KEY CLUSTERED  (ParameterID ASC)
    END
 GO
 

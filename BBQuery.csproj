@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
   <!--Import Project="$(MSBuildExtensionsPath)\MSBuildCommunityTasks\MSBuild.Community.Tasks.Targets" /-->
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -13,7 +14,7 @@
     <AssemblyName>Bitboxx.DNNModules.BBQuery</AssemblyName>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
-    <OldToolsVersion>3.5</OldToolsVersion>
+    <OldToolsVersion>4.0</OldToolsVersion>
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
@@ -54,12 +55,12 @@
     </Reference>
     -->
     <Reference Include="DotNetNuke">
-      <HintPath>..\..\..\..\References\DNN6.0.0\DotNetNuke.dll</HintPath>
+      <HintPath>..\..\..\..\Bitboxx\Dependencies\DNN6.0.0\DotNetNuke.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="DotNetNuke.Web, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\References\DNN6.0.0\DotNetNuke.Web.dll</HintPath>
+      <HintPath>..\..\..\..\Bitboxx\Dependencies\DNN6.0.0\DotNetNuke.Web.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Microsoft.ApplicationBlocks.Data, Version=2.0.0.0, Culture=neutral">
@@ -87,7 +88,7 @@
     </Reference>
     <Reference Include="Telerik.Web.UI, Version=2011.1.519.35, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\References\DNN6.0.0\Telerik.Web.UI.dll</HintPath>
+      <HintPath>..\..\..\..\Bitboxx\Dependencies\DNN6.0.0\Telerik.Web.UI.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>
@@ -174,9 +175,11 @@
     <Content Include="EditParameters.ascx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Installation\BBQuery.png" />
     <Content Include="Installation\CleanUp\CleanUp.01.00.00.txt" />
     <Content Include="Installation\Config\Config.txt" />
     <Content Include="Installation\License.txt" />
+    <Content Include="Installation\ReleaseNotes\Release.01.00.02.txt" />
     <Content Include="Installation\ReleaseNotes\Release.01.00.00.txt" />
     <Content Include="Settings.ascx" />
     <Content Include="View.ascx" />
@@ -184,8 +187,13 @@
   <ItemGroup>
     <Content Include="App_LocalResources\EditParameters.ascx.resx" />
   </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
   <Import Project="$(MSBuildProjectDirectory)\Installation\Project.targets" />
   <ProjectExtensions>
     <VisualStudio>
