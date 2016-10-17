@@ -42,30 +42,18 @@
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <!-- Warum sind die da drin ?
-    <Reference Include="DotNetNuke.Web">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\bin\DotNetNuke.Web.dll</HintPath>
-      <Private>false</Private>
-    </Reference>
-    <Reference Include="WebFormsMvp">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\bin\WebFormsMvp.dll</HintPath>
-      <Private>false</Private>
-    </Reference>
-    -->
     <Reference Include="DotNetNuke">
-      <HintPath>..\..\..\..\Bitboxx\Dependencies\DNN6.0.0\DotNetNuke.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\..\..\Dependencies\DNN6.0.0\DotNetNuke.dll</HintPath>
+      <Private>False</Private>    
     </Reference>
     <Reference Include="DotNetNuke.Web, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Bitboxx\Dependencies\DNN6.0.0\DotNetNuke.Web.dll</HintPath>
+      <HintPath>..\..\..\..\Dependencies\DNN6.0.0\DotNetNuke.Web.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Microsoft.ApplicationBlocks.Data, Version=2.0.0.0, Culture=neutral">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\bin\Microsoft.ApplicationBlocks.Data.dll</HintPath>
+      <HintPath>..\..\..\..\Dependencies\DNN6.0.0\Microsoft.ApplicationBlocks.Data.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="System" />
@@ -88,7 +76,7 @@
     </Reference>
     <Reference Include="Telerik.Web.UI, Version=2011.1.519.35, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Bitboxx\Dependencies\DNN6.0.0\Telerik.Web.UI.dll</HintPath>
+      <HintPath>..\..\..\..\Dependencies\DNN6.0.0\Telerik.Web.UI.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>
@@ -186,6 +174,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_LocalResources\EditParameters.ascx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\EditParameters.ascx.de-DE.resx" />
+    <Content Include="App_LocalResources\Settings.ascx.de-DE.resx" />
+    <Content Include="App_LocalResources\View.ascx.de-DE.resx" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

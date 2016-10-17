@@ -23,12 +23,13 @@ using System.Web.UI;
 using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 using Bitboxx.DNNModules.BBQuery.Components;
+using DotNetNuke.Entities.Modules;
 using DotNetNuke.UI.UserControls;
 using DotNetNuke.Web.UI.WebControls;
 
 namespace Bitboxx.DNNModules.BBQuery.Controls
 {
-	public partial class SearchControl : UserControl
+	public partial class SearchControl : PortalModuleBase
 	{
 		private int _tabModuleID;
 		private List<ParameterInfo> _parameters;
@@ -47,8 +48,21 @@ namespace Bitboxx.DNNModules.BBQuery.Controls
 		public List<ParameterInfo> SearchParameters
 		{
 			get { return _searchParameters; }
-		}		
-		protected void Page_Load(object sender, EventArgs e)
+		}
+
+        protected override void OnInit(EventArgs e)
+        {
+            base.OnInit(e);
+            string fileName = System.IO.Path.GetFileNameWithoutExtension(this.AppRelativeVirtualPath);
+            if (this.ID != null)
+                //this will fix it when its placed as a ChildUserControl 
+                this.LocalResourceFile = this.LocalResourceFile.Replace(this.ID, fileName);
+            else
+                // this will fix it when its dynamically loaded using LoadControl method 
+                this.LocalResourceFile = this.LocalResourceFile + fileName + ".ascx.resx";
+        }
+        
+        protected void Page_Load(object sender, EventArgs e)
 		{
 			BBQueryController cont = new BBQueryController();
 			_parameters = cont.GetParameters(TabModuleID, true);
@@ -102,9 +116,9 @@ namespace Bitboxx.DNNModules.BBQuery.Controls
 					switch (parameter.DataType.ToLower())
 					{
 						case "string":
-							ddl.Items.Add(new ListItem("enthält", "0"));
-							ddl.Items.Add(new ListItem("beginnt", "1"));
-							ddl.Items.Add(new ListItem("endet", "2"));
+							ddl.Items.Add(new ListItem(LocalizeString("Contains.Text"), "0"));
+                            ddl.Items.Add(new ListItem(LocalizeString("Starts.Text"), "1"));
+                            ddl.Items.Add(new ListItem(LocalizeString("Ends.Text"), "2"));
 							tblCell = new HtmlTableCell();
 							tblCell.Controls.Add(ddl);
 							tblRow.Cells.Add(tblCell);
@@ -165,13 +179,13 @@ namespace Bitboxx.DNNModules.BBQuery.Controls
 							dnnTimePicker.ID = "ctrl" + loop.ToString();
 							dnnTimePicker.EnableViewState = true;
 							dnnTimePicker.MinDate = DateTime.MinValue;
-							dnnTimePicker.SelectedDate = new DateTime(1899, 12, 31);
+							dnnTimePicker.SelectedDate = null;
 							
 							DnnDatePicker dnnDatePicker = new DnnDatePicker();
 							dnnDatePicker.ID = "ctrl" + loop.ToString() + "a";
 							dnnDatePicker.EnableViewState = true;
 							dnnDatePicker.MinDate = DateTime.MinValue;
-							dnnDatePicker.SelectedDate = new DateTime(1899,12,31);
+							dnnDatePicker.SelectedDate = null;
 							dnnDatePicker.Controls.Add(dnnTimePicker);
 							dnnDatePicker.Width = new Unit(230);
 							tblCell = new HtmlTableCell();

@@ -16,8 +16,7 @@
 		</div>
 		<div class="dnnFormItem">
 			<dnn:Label id="lblConnectionString" runat="server"  controlname="txtConnectionString" suffix=":" />
-			<asp:TextBox id="txtConnectionString" runat="server" CssClass="dnnFormInput dnnFormRequired" Width="400" />
-			<asp:RequiredFieldValidator ID="valConnectionString" CssClass="dnnFormMessage dnnFormError"  ControlToValidate="txtConnectionString" ResourceKey="valConnectionString.Error" runat="server"/>
+			<asp:TextBox id="txtConnectionString" runat="server" CssClass="dnnFormInput" Width="400" />
 		</div>
 		<div class="dnnFormItem">
 			<dnn:Label id="lblSqlCommand" runat="server"  controlname="txtSqlCommand" suffix=":" />

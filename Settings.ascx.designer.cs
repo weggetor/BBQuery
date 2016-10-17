@@ -28,7 +28,7 @@ namespace Bitboxx.DNNModules.BBQuery {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DotNetNuke.UI.UserControls.LabelControl lblProvider;
+        protected global::System.Web.UI.UserControl lblProvider;
         
         /// <summary>
         /// ddlProvider control.
@@ -46,7 +46,7 @@ namespace Bitboxx.DNNModules.BBQuery {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DotNetNuke.UI.UserControls.LabelControl lblConnectionString;
+        protected global::System.Web.UI.UserControl lblConnectionString;
         
         /// <summary>
         /// txtConnectionString control.
@@ -58,22 +58,13 @@ namespace Bitboxx.DNNModules.BBQuery {
         protected global::System.Web.UI.WebControls.TextBox txtConnectionString;
         
         /// <summary>
-        /// valConnectionString control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator valConnectionString;
-        
-        /// <summary>
         /// lblSqlCommand control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DotNetNuke.UI.UserControls.LabelControl lblSqlCommand;
+        protected global::System.Web.UI.UserControl lblSqlCommand;
         
         /// <summary>
         /// txtSqlCommand control.
@@ -100,7 +91,7 @@ namespace Bitboxx.DNNModules.BBQuery {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DotNetNuke.UI.UserControls.LabelControl lblSql;
+        protected global::System.Web.UI.UserControl lblSql;
         
         /// <summary>
         /// chkSql control.
@@ -118,7 +109,7 @@ namespace Bitboxx.DNNModules.BBQuery {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DotNetNuke.UI.UserControls.LabelControl lblHideModule;
+        protected global::System.Web.UI.UserControl lblHideModule;
         
         /// <summary>
         /// chkHideModule control.
@@ -136,7 +127,7 @@ namespace Bitboxx.DNNModules.BBQuery {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DotNetNuke.UI.UserControls.LabelControl lblLinkSource;
+        protected global::System.Web.UI.UserControl lblLinkSource;
         
         /// <summary>
         /// txtLinkSource control.
@@ -154,7 +145,7 @@ namespace Bitboxx.DNNModules.BBQuery {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DotNetNuke.UI.UserControls.LabelControl lblAllowEdits;
+        protected global::System.Web.UI.UserControl lblAllowEdits;
         
         /// <summary>
         /// chkAllowEdits control.
@@ -172,7 +163,7 @@ namespace Bitboxx.DNNModules.BBQuery {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DotNetNuke.UI.UserControls.LabelControl lblAllowInserts;
+        protected global::System.Web.UI.UserControl lblAllowInserts;
         
         /// <summary>
         /// chkAllowInserts control.
@@ -190,7 +181,7 @@ namespace Bitboxx.DNNModules.BBQuery {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DotNetNuke.UI.UserControls.LabelControl lblAllowDeletes;
+        protected global::System.Web.UI.UserControl lblAllowDeletes;
         
         /// <summary>
         /// chkAllowDeletes control.
@@ -217,7 +208,7 @@ namespace Bitboxx.DNNModules.BBQuery {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DotNetNuke.UI.UserControls.LabelControl lblKey;
+        protected global::System.Web.UI.UserControl lblKey;
         
         /// <summary>
         /// txtKey control.
@@ -253,7 +244,7 @@ namespace Bitboxx.DNNModules.BBQuery {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DotNetNuke.UI.UserControls.LabelControl lblRoleAllowEdits;
+        protected global::System.Web.UI.UserControl lblRoleAllowEdits;
         
         /// <summary>
         /// ddlRoleAllowEdits control.
@@ -271,7 +262,7 @@ namespace Bitboxx.DNNModules.BBQuery {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DotNetNuke.UI.UserControls.LabelControl lblUpdate;
+        protected global::System.Web.UI.UserControl lblUpdate;
         
         /// <summary>
         /// txtUpdate control.
@@ -307,7 +298,7 @@ namespace Bitboxx.DNNModules.BBQuery {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DotNetNuke.UI.UserControls.LabelControl lblRoleAllowInserts;
+        protected global::System.Web.UI.UserControl lblRoleAllowInserts;
         
         /// <summary>
         /// ddlRoleAllowInserts control.
@@ -325,7 +316,7 @@ namespace Bitboxx.DNNModules.BBQuery {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DotNetNuke.UI.UserControls.LabelControl lblInsert;
+        protected global::System.Web.UI.UserControl lblInsert;
         
         /// <summary>
         /// txtInsert control.
@@ -361,7 +352,7 @@ namespace Bitboxx.DNNModules.BBQuery {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DotNetNuke.UI.UserControls.LabelControl lblRoleAllowDeletes;
+        protected global::System.Web.UI.UserControl lblRoleAllowDeletes;
         
         /// <summary>
         /// ddlRoleAllowDeletes control.
@@ -379,7 +370,7 @@ namespace Bitboxx.DNNModules.BBQuery {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DotNetNuke.UI.UserControls.LabelControl lblDelete;
+        protected global::System.Web.UI.UserControl lblDelete;
         
         /// <summary>
         /// txtDelete control.

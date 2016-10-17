@@ -19,6 +19,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Web;
 using System.Web.UI.WebControls;
 using Bitboxx.DNNModules.BBQuery.Components;
@@ -177,17 +178,22 @@ namespace Bitboxx.DNNModules.BBQuery
 					pnlShowSql.Visible = Settings["ShowSql"] != null && Convert.ToBoolean(Settings["ShowSql"]);
 				}
 
-				if (Settings["SelectCommand"] != null && Settings["Provider"] != null &&
-					Settings["ConnectionString"] != null && Settings["Key"] != null )
+				if (Settings["SelectCommand"] != null && Settings["Provider"] != null && Settings["Key"] != null )
 				{
 					sqlCommand = (string)Settings["SelectCommand"];
-					connectionString = (string)Settings["ConnectionString"];
+
+                    if (String.IsNullOrEmpty((string) Settings["ConnectionString"]))
+				        connectionString = ConfigurationManager.ConnectionStrings["SiteSqlServer"].ConnectionString;
+				    else
+				        connectionString = (string) Settings["ConnectionString"];
+
 					key = (string)Settings["Key"];
 					provider = (string) Settings["Provider"];
 					updCommand = (string) Settings["UpdateCommand"];
 					delCommand = (string)Settings["DeleteCommand"];
 					insCommand = (string)Settings["InsertCommand"];
-					if (!Page.IsPostBack)
+					
+                    if (!Page.IsPostBack)
 					{
 						if (key != String.Empty)
 							GridView1.DataKeyNames = key.Split(',');

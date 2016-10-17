@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="metadata">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" />
+							</xsd:sequence>
+							<xsd:attribute name="name" use="required" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="assembly">
+						<xsd:complexType>
+							<xsd:attribute name="alias" type="xsd:string" />
+							<xsd:attribute name="name" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="Configure.Message" xml:space="preserve">
+    <value>Konfigurieren Sie zunächst dasModul!</value>
+  </data>
+	<data name="ControlTitle_settings.Text" xml:space="preserve">
+    <value>BBQuery Modul-Einstellungen</value>
+  </data>
+	<data name="lblAllowDeletes.Help" xml:space="preserve">
+    <value>Überprüfen Sie, ob Sie speziellen Benutzergruppem das Löschen erlauben möchten</value>
+  </data>
+	<data name="lblAllowDeletes.Text" xml:space="preserve">
+    <value>Löschen zulassen</value>
+  </data>
+	<data name="lblAllowEdits.Help" xml:space="preserve">
+    <value>Überprüfen Sie, ob Sie ob Sie speziellen Benutzergruppen das Bearbeiten erlauben möchten</value>
+  </data>
+	<data name="lblAllowEdits.Text" xml:space="preserve">
+    <value>Bearbeitungen zulassen</value>
+  </data>
+	<data name="lblConnectionString.Help" xml:space="preserve">
+    <value>Bitte geben Sie die Verbindungszeichenfolge (Connection String) für die Verbindung zu Ihrer Datenquelle ein.</value>
+  </data>
+	<data name="lblConnectionString.Text" xml:space="preserve">
+    <value>Verbindungszeichenfolge</value>
+  </data>
+	<data name="lblDelete.Help" xml:space="preserve">
+    <value>Tragen Sie die DELETE SQL-Anweisung ein mit dem die Daten gelöscht werden sollen. Verwenden Sie Parametersyntax (z. B. DELETE FROM Tabelle WHERE idfield=@idfield)</value>
+  </data>
+	<data name="lblDelete.Text" xml:space="preserve">
+    <value>DELETE-Befehl</value>
+  </data>
+	<data name="lblIntro.Text" xml:space="preserve">
+    <value>Definieren Sie SQL-Befehle, Parameter und so weiter....</value>
+  </data>
+	<data name="lblKey.Help" xml:space="preserve">
+    <value>Bitte geben Sie den Primärschlüssel Ihrer Auswahltabelle ein</value>
+  </data>
+	<data name="lblKey.Text" xml:space="preserve">
+    <value>Primärschlüssel</value>
+  </data>
+	<data name="lblProvider.Help" xml:space="preserve">
+    <value>Bitte wählen Sie den Datenbankanbieter (Provider) für die Verbindung zu Ihrer Datenquelle</value>
+  </data>
+	<data name="lblProvider.Text" xml:space="preserve">
+    <value>Datenbankanbieter</value>
+  </data>
+	<data name="lblRoleAllowDeletes.Help" xml:space="preserve">
+    <value>Wählen Sie die Benutzerrolle, die ein Benutzer haben muss um löschen zu dürfen (wenn "Löschen erlauben" ausgewählt ist)</value>
+  </data>
+	<data name="lblRoleAllowDeletes.Text" xml:space="preserve">
+    <value>Löschen-Benutzerrolle</value>
+  </data>
+	<data name="lblRoleAllowEdits.Help" xml:space="preserve">
+    <value>Wählen Sie die Benutzerrolle, die ein Benutzer haben muss um Bearbeitungsrechte zu haben (wenn 'Änderungen zulassen' ausgewählt ist)</value>
+  </data>
+	<data name="lblRoleAllowEdits.Text" xml:space="preserve">
+    <value>Bearbeiten-Benutzerrolle</value>
+  </data>
+	<data name="lblSqlCommand.Help" xml:space="preserve">
+    <value>Geben Sie den SQL SELECT-Befehl ein der der die Daten für die Ergebnisanzeige auswählt</value>
+  </data>
+	<data name="lblSqlCommand.Text" xml:space="preserve">
+    <value>SELECT - Befehl:</value>
+  </data>
+	<data name="lblUpdate.Help" xml:space="preserve">
+    <value>Tragen Sie die UPDATE SQL-Anweisung ein mit dem die Daten aktualisiert werden sollen.Verwenden Sie Parametersyntax (zB. UPDATE Tabelle SET field1=@field1, field2=@field2 wo idfield=@idfield)</value>
+  </data>
+	<data name="lblUpdate.Text" xml:space="preserve">
+    <value>Update-Befehl</value>
+  </data>
+	<data name="Select.Text" xml:space="preserve">
+    <value>Wählen Sie Einstellungen</value>
+  </data>
+	<data name="valConnectionString.Error" xml:space="preserve">
+    <value>Verbindungszeichenfolge ist manatory!</value>
+  </data>
+	<data name="valKey.Error" xml:space="preserve">
+    <value>Primary Schlüssel ist obligatorisch.</value>
+  </data>
+	<data name="valSqlCommand.Error" xml:space="preserve">
+    <value>SELECT-Befehl ist obligatorisch!</value>
+  </data>
+	<data name="valUpdate.Error" xml:space="preserve">
+    <value>Update-Befehl ist obligatorisch!</value>
+  </data>
+	<data name="Edit.Text" xml:space="preserve">
+    <value>Einstellungen bearbeiten</value>
+  </data>
+	<data name="Parameters.Text" xml:space="preserve">
+    <value>Parameter</value>
+  </data>
+	<data name="lblSql.Help" xml:space="preserve">
+		<value>Zeigt den aktuellen SQL Befehl</value>
+	</data>
+	<data name="lblSql.Text" xml:space="preserve">
+		<value>Zeige SQL </value>
+	</data>
+	<data name="lblAllowInserts.Help" xml:space="preserve">
+		<value>Überprüfen Sie, ob Sie ob Sie speziellen Benutzergruppen das Einfügen von Datensätzen erlauben möchten</value>
+	</data>
+	<data name="lblAllowInserts.Text" xml:space="preserve">
+		<value>Einfügen zulassen</value>
+	</data>
+	<data name="lblInsert.Help" xml:space="preserve">
+		<value>Tragen Sie die INSERT SQL-Anweisung ein mit dem die Daten gelöscht werden sollen. Verwenden Sie Parametersyntax (z. B. INSERT INTO Tabelle (Field1...) VALUES (@Field1,...)</value>
+	</data>
+	<data name="lblInsert.Text" xml:space="preserve">
+		<value>INSERT-Befehl</value>
+	</data>
+	<data name="lblRoleAllowInserts.Help" xml:space="preserve">
+		<value>Wählen Sie die Benutzerrolle, die ein Benutzer haben muss um Einfügerechte zu haben (wenn 'Einfügen zulassen' ausgewählt ist)</value>
+	</data>
+	<data name="lblRoleAllowInserts.Text" xml:space="preserve">
+		<value>Einfügen-Benutzerrolle</value>
+	</data>
+	<data name="valInsert.Error" xml:space="preserve">
+		<value>INSERT-Befehl ist obligatorisch!</value>
+	</data>
+	<data name="lblHideModule.Help" xml:space="preserve">
+		<value>Wenn angehakt wird das Modul nur angezeigt wenn einer der definierten Parameter ausgefüllt ist</value>
+	</data>
+	<data name="lblHideModule.Text" xml:space="preserve">
+		<value>Modul verstecken</value>
+	</data>
+	<data name="lblLinkSource.Help" xml:space="preserve">
+		<value>Geben Sie eine kommaseparierte Liste der Felder an die als Links angezeigt werden sollen</value>
+	</data>
+	<data name="lblLinkSource.Text" xml:space="preserve">
+		<value>Feld-Links</value>
+	</data>
+	<data name="Link.Text" xml:space="preserve">
+		<value>Link Einstellungen</value>
+	</data>
+</root>
