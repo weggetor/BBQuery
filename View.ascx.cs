@@ -38,7 +38,7 @@ namespace Bitboxx.DNNModules.BBQuery
 	/// </summary>
     [DNNtc.PackageProperties("Bitboxx.BBQuery", 1, "Bitboxx BBQuery", "Define database queries with configurable parameters", "BBQuery.png", "Torsten Weggen", "bitboxx solutions", "http://www.bitboxx.net", "info@bitboxx.net", true)]
     [DNNtc.ModuleProperties("Bitboxx.BBQuery", "Bitboxx BBQuery", 0)]
-	[DNNtc.ModuleDependencies(DNNtc.ModuleDependency.CoreVersion, "06.01.00")]
+	[DNNtc.ModuleDependencies(DNNtc.ModuleDependency.CoreVersion, "08.00.00")]
 	[DNNtc.ModuleControlProperties("", "Bitboxx.BBQuery", DNNtc.ControlType.View, "", true, true)]
 	public partial class View : PortalModuleBase, IModuleCommunicator, IModuleListener
 	{
