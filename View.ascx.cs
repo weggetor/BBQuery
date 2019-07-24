@@ -178,7 +178,9 @@ namespace Bitboxx.DNNModules.BBQuery
 					pnlShowSql.Visible = Settings["ShowSql"] != null && Convert.ToBoolean(Settings["ShowSql"]);
 				}
 
-				if (Settings["SelectCommand"] != null && Settings["Provider"] != null && Settings["Key"] != null )
+			    bool needsKey = allowInserts || allowEdits || allowDeletes;
+
+                if (Settings["SelectCommand"] != null && Settings["Provider"] != null && (!needsKey || needsKey && Settings["Key"] != null ))
 				{
 					sqlCommand = (string)Settings["SelectCommand"];
 
@@ -195,14 +197,14 @@ namespace Bitboxx.DNNModules.BBQuery
 					
                     if (!Page.IsPostBack)
 					{
-						if (key != String.Empty)
+						if (!String.IsNullOrEmpty(key))
 							GridView1.DataKeyNames = key.Split(',');
 						GridView1.AllowPaging = true;
 						GridView1.PageSize = 10;
 						GridView1.AllowSorting = true;
 
-						if (key != String.Empty)
-							DetailsView1.DataKeyNames = key.Split(',');
+                        if (!String.IsNullOrEmpty(key))
+                            DetailsView1.DataKeyNames = key.Split(',');
 						
 					}
 					
@@ -370,7 +372,7 @@ namespace Bitboxx.DNNModules.BBQuery
 			try
 			{
 				BBQueryController cont = new BBQueryController();
-				string orderby = (Order == String.Empty ? "" : " ORDER BY " + Order + " " + SortedDirection);
+				string orderby = (String.IsNullOrEmpty(Order) ? "" : " ORDER BY " + Order + " " + SortedDirection);
 
 				if (SelectedKey != null)
 				{
